@@ -11,5 +11,6 @@
     "SMTP_HOST" : "smtp.gmail.com",
     "SMTP_USER" : "tsilva@hive.pt",
     "SMTP_PASSWORD" : "password",
-    "SENDER_EMAIL" : "Tiago Silva <tsilva@hive.pt>"
+    "EMAIL_SENDER_NAME" : "Tiago Silva",
+    "EMAIL_SENDER_EMAIL" : "tsilva@hive.pt"
 }

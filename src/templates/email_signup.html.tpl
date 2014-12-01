@@ -8,6 +8,6 @@
         <a href="{{ account.get_confirm_url() }}">Confirm account</a><br />
         <br />
         Yours sincerely,<br />
-        Test App
+        {{ sender_name|default('Administrator', True) }}
     </p>
 {% endblock %}

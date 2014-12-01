@@ -10,6 +10,6 @@
         If you didn't ask us for help with your password, please <a href="mailto:{{ sender }}">let us know</a> right away.<br />
         <br />
         Yours sincerely,<br />
-        Test
+        {{ sender_name|default('Administrator', True) }}
     </p>
 {% endblock %}

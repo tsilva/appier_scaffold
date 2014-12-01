@@ -236,13 +236,17 @@ class Account(base.Base):
         self._generate_confirmation_code_s()
 
         # sends the confirmation email
-        sender = appier.conf("SENDER_EMAIL", "Test <test@test.pt>")
+        app_name = appier.conf("APP_NAME", "Test App")
+        sender_name = appier.conf("EMAIL_SENDER_NAME", "Administrator")
+        sender_email = appier.conf("EMAIL_SENDER_ADDRESS", "test@test.com")
+        sender = "%s <%s>" % (sender_name, sender_email)
         self.owner.email(
             "email_signup.html.tpl",
+            subject = "Welcome to %s" % app_name,
             sender = sender,
-            account = self,
-            subject = "Welcome to Test App",
-            receivers = [self.email]
+            receivers = [self.email],
+            sender_name = sender_name,
+            account = self
         )
 
     def get_confirm_url(self):
@@ -257,13 +261,17 @@ class Account(base.Base):
         self._generate_reset_code_s()
 
         # sends the recovery email
-        sender = appier.conf("SENDER_EMAIL", "Test <test@test.pt>")
+        app_name = appier.conf("APP_NAME", "Test App")
+        sender_name = appier.conf("EMAIL_SENDER_NAME", "Administrator")
+        sender_email = appier.conf("EMAIL_SENDER_ADDRESS", "test@test.com")
+        sender = "%s <%s>" % (sender_name, sender_email)
         self.owner.email(
             "email_recover.html.tpl",
+            subject = "Somebody requested a new password for your %s account" % app_name,
             sender = sender,
-            account = self,
-            subject = "Somebody requested a new password for your Test App account",
-            receivers = [self.email]
+            receivers = [self.email],
+            sender_name = sender_name,
+            account = self
         )
 
     def get_reset_url(self):
