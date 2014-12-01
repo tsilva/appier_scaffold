@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+.success {
+    color: green;
+}
+
+.failure {
+    color: #c31f30;
+}
+
+.enabled {
+    color: #3668c6;
+}
+
+.disabled {
+    color: #c31f30;
+}
+
+.allowed {
+    color: green;
+}
+
+.caution {
+    color: orange;
+}
+
+.denied {
+    color: #c31f30;
+}
+
+div.header-label {
+    color: #999999;
+    text-align: center;
+}
+
+.error-description {
+    margin: 8px 100px 0px 0px;
+}

@@ -1,0 +1,15 @@
+{
+    "--- Basic configuration ---" : null,
+    "LEVEL" : "DEBUG",
+    "SERVER" : "netius",
+    "HOST" : "0.0.0.0",
+    "PORT" : "8080",
+    "BASE_URL" : "http://localhost:8080",
+    "APP_NAME" : "Test Application",
+
+    "--- Email configuration ---" : null,
+    "SMTP_HOST" : "smtp.gmail.com",
+    "SMTP_USER" : "tsilva@hive.pt",
+    "SMTP_PASSWORD" : "password",
+    "SENDER_EMAIL" : "Tiago Silva <tsilva@hive.pt>"
+}

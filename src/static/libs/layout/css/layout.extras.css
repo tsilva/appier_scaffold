@@ -1,0 +1,617 @@
+@charset "utf-8";
+
+/*
+ Hive Layout Framework
+ Copyright (C) 2008-2014 Hive Solutions Lda.
+
+ This file is part of Hive Layout Framework.
+
+ Hive Layout Framework is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ Hive Layout Framework is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with Hive Layout Framework. If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/*
+ __author__    = João Magalhães <joamag@hive.pt>
+ __version__   = 1.0.0
+ __revision__  = $LastChangedRevision$
+ __date__      = $LastChangedDate$
+ __copyright__ = Copyright (c) 2008-2014 Hive Solutions Lda.
+ __license__   = GNU General Public License (GPL), Version 3
+*/
+
+html {
+    height: 100%;
+}
+
+body.fluid {
+    height: 100%;
+    margin: 0px auto 0px auto;
+    min-width: 960px;
+    padding: 0px 0px 0px 0px;
+    width: inherit;
+}
+
+body.fluid > .container {
+    height: 100%;
+    margin: 0px auto 0px auto;
+}
+
+body.fluid.fixed > .container {
+    width: 1024px;
+}
+
+body.fluid #overlay {
+    background-color: #888888;
+}
+
+body.fluid #header {
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+body.fluid #footer {
+    border-top: 1px solid #e0e0e0;
+    color: #4d4d4d;
+    font-size: 12px;
+    padding: 6px 0px 6px 0px;
+}
+
+body.fluid #content {
+    padding: 50px 0px 0px 0px;
+    position: relative;
+    text-align: left;
+    z-index: 1;
+}
+
+body.fluid .bar-loader.loading {
+    opacity: 0.0;
+}
+
+body.fluid .top-loader {
+    opacity: 1.0;
+}
+
+body.fluid .content.no-header .content-header {
+    display: none;
+}
+
+body.fluid .content-container {
+    padding: 0px 24px 0px 24px;
+}
+
+body.fluid .content.no-padding .content-container {
+    padding: 0px 0px 0px 0px;
+}
+
+body.fluid .window {
+    border-color: #888888;
+    box-shadow: 0px 1px 4px #aaaaaa;
+    -moz-box-shadow: 0px 1px 4px #aaaaaa;
+    -webkit-box-shadow: 0px 1px 4px #aaaaaa;
+}
+
+body.no-footer .footer {
+    display: none;
+}
+
+.content-container table {
+    border-collapse: collapse;
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+}
+
+.content-container form {
+    margin: 24px 0px 24px 0px;
+    max-width: 690px;
+    width: 100%;
+}
+
+.content-container form .buttons {
+    padding-bottom: 18px;
+    text-align: right;
+}
+
+.content-container form.inline {
+    max-width: 100%;
+}
+
+.content-container form.inline div.item {
+    float: left;
+    margin: 8px 0px 8px 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    vertical-align: top;
+    width: 50%;
+}
+
+.content-container form.inline div.item.clear {
+    float: none;
+}
+
+.content-container form.inline div.item.full {
+    width: 100%;
+}
+
+.content-container form.inline div.separator {
+    clear: both;
+}
+
+.content-container .text-field {
+    width: 100%;
+}
+
+.content-container .text-area {
+    width: 100%;
+}
+
+.content-container .filter .table-row > td:first-child,
+.content-container .filter .table-row > th:first-child {
+    padding-left: 24px;
+}
+
+.content-container .filter .table-row > td:last-child,
+.content-container .filter .table-row > th:last-child {
+    padding-right: 24px;
+}
+
+.border-box {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.border-box * {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.border-box .button.button-color {
+    min-width: 94px;
+}
+
+.or {
+    font-weight: bold;
+    margin: 0px 8px 0px 8px;
+    text-transform: uppercase;
+}
+
+.separator {
+    border-top: 1px solid #e0e0e0;
+    margin: 18px 0px 18px 0px;
+}
+
+.top-bar {
+    background-color: #cccccc;
+    height: 50px;
+    line-height: 50px;
+    min-width: 960px;
+    padding: 0px 0px 0px 0px;
+    text-align: left;
+    width: 100%;
+    z-index: 10;
+}
+
+.top-bar.large {
+    height: 64px;
+    line-height: 64px;
+}
+
+.top-bar,
+.top-bar.grey {
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #cccccc;
+}
+
+.top-bar > .container {
+    margin: 0px auto 0px auto;
+}
+
+body.fluid.fixed .top-bar > .container {
+    width: 1024px;
+}
+
+.top-bar > .container:after {
+    clear: both;
+    display: block;
+    height: 0px;
+    visibility: hidden;
+}
+
+.top-bar > .container > :first-child {
+    margin-left: 24px;
+}
+
+.top-bar > .container > * {
+    float: left;
+}
+
+.top-bar > .container > .right {
+    float: right;
+    margin-right: 24px;
+}
+
+.top-bar > .container > .logo {
+    background: transparent none no-repeat;
+    color: #2d2d2d;
+    font-size: 26px;
+    font-weight: bold;
+    height: 50px;
+    text-shadow: 1px 1px 1px #ffffff;
+    width: 176px;
+}
+
+.top-bar > .container > .logo > a {
+    color: #2d2d2d;
+    cursor: pointer;
+}
+
+.top-bar > .container > .logo > a:hover {
+    border-bottom: none;
+    color: #3668c6;
+}
+
+.top-bar > .container > .text-field {
+    margin-top: 9px;
+}
+
+.top-bar > .container > .drop-field {
+    height: 34px;
+    line-height: 34px;
+    margin-top: 9px;
+}
+
+.top-bar > .container > .text-field,
+.top-bar > .container > .drop-field > .text-field {
+    border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    font-size: 14px;
+    height: 32px;
+    transition: width 0.2s;
+    -webkit-transition: width 0.2s;
+    vertical-align: top;
+    width: 300px;
+}
+
+.top-bar > .container > .text-field:focus,
+.top-bar > .container > .drop-field > .text-field:focus {
+    width: 400px;
+}
+
+.side-links {
+    background-color: #ffffff;
+    border-right: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    color: #2d2d2d;
+    font-weight: bold;
+    margin: 0px 0px 0px 0px;
+    min-height: 100%;
+    padding: 69px 0px 16px 0px;
+    position: absolute;
+    text-align: left;
+    text-transform: uppercase;
+    width: 200px;
+    z-index: 1;
+}
+
+.side-links.grey,
+body.grey .side-links {
+    background-color: #f2f2f2;
+    border-left: 1px solid #e0e0e0;
+    box-shadow: 1px 0px 4px #f2f2f2;
+    -moz-box-shadow: 1px 0px 4px #f2f2f2;
+    -webkit-box-shadow: 1px 0px 4px #f2f2f2;
+}
+
+.side-links > a {
+    color: #4d4d4d;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    margin: 0px 0px 14px 0px;
+    padding: 0px 8px 0px 24px;
+}
+
+.side-links > a:last-child {
+    margin-bottom: 0px;
+}
+
+.side-links > a.active,
+.side-links > a.selected {
+    background-color: transparent;
+    color: #3668c6;
+}
+
+.side-links > a:hover {
+    background-color: transparent;
+    border-bottom: none;
+    color: #3668c6;
+}
+
+.side-links > div.separator {
+    border-top: 1px solid #e0e0e0;
+}
+
+.system-menu {
+    font-weight: bold;
+}
+
+.system-menu .menu-button {
+    background: transparent url(../images/arrow-blue.png) no-repeat right center;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    padding: 0px 24px 0px 18px;
+}
+
+.system-menu.active .menu-button {
+    background-color: #ffffff;
+    border-left-color: #dddddd;
+    border-right-color: #dddddd;
+}
+
+.system-menu .menu-link {
+    cursor: pointer;
+}
+
+.system-menu .menu-contents {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    box-shadow: 0px 1px 4px #dddddd;
+    -moz-box-shadow: 0px 1px 4px #dddddd;
+    -webkit-box-shadow: 0px 1px 4px #dddddd;
+    min-width: 340px;
+    position: absolute;
+}
+
+.system-menu .header-contents {
+    line-height: 0px;
+    padding: 20px 20px 20px 20px;
+}
+
+.system-menu .avatar-image {
+    border-radius: 32px 32px 32px 32px;
+    -moz-border-radius: 32px 32px 32px 32px;
+    -webkit-border-radius: 32px 32px 32px 32px;
+    height: 64px;
+    width: 64px;
+}
+
+.system-menu .avatar-contents {
+    display: inline-block;
+    margin: 0px 12px 0px 12px;
+    vertical-align: top;
+}
+
+.system-menu .avatar-contents h2 {
+    font-size: 15px;
+    line-height: 15px;
+    margin: 15px 0px 7px 0px;
+    text-transform: uppercase;
+}
+
+.system-menu .avatar-contents h3 {
+    color: #5d5d5d;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 13px;
+    margin: 0px 0px 0px 0px;
+}
+
+.system-menu .footer-contents {
+    border-top: 1px solid #dddddd;
+    line-height: 20px;
+    padding: 12px 20px 12px 20px;
+    text-align: right;
+}
+
+.content-header {
+    border-bottom: 1px solid #e0e0e0;
+    height: 36px;
+    line-height: 36px;
+    margin: 16px 0px 0px 0px;
+    padding-bottom: 10px;
+}
+
+.content-header:after {
+    clear: both;
+    display: block;
+    height: 0px;
+    visibility: hidden;
+}
+
+.content-header > h1 {
+    float: left;
+    font-weight: normal;
+    margin: 0px 0px 0px 24px;
+}
+
+.content-header > .content-buttons {
+    float: right;
+    margin: 0px 24px 0px 0px;
+}
+
+.side-panel {
+    background-color: #ffffff;
+    border-left: 1px solid #888888;
+    box-shadow: -2px 0px 4px #aaaaaa;
+    -moz-box-shadow: -2px 0px 4px #aaaaaa;
+    -webkit-box-shadow: -2px 0px 4px #aaaaaa;
+    display: none;
+    min-height: 100%;
+    padding: 0px 24px 0px 24px;
+    position: fixed;
+    right: 0px;
+    text-align: left;
+    top: 0px;
+    width: 360px;
+    z-index: 30;
+}
+
+.side-panel.grey,
+body.grey .side-panel {
+    background-color: #f2f2f2;
+}
+
+.side-panel h1 {
+    font-weight: normal;
+    text-transform: none;
+}
+
+.side-panel .form {
+    margin: 0px auto 0px auto;
+    width: 100%;
+}
+
+.side-panel .text-field {
+    width: 100%;
+}
+
+.side-panel .buttons {
+    margin-top: 24px;
+}
+
+.side-panel .buttons > * {
+    margin-right: 6px;
+}
+
+.side-panel .buttons > :last-child {
+    margin-right: 0px;
+}
+
+.show-panel {
+    color: #3d3d3d;
+}
+
+.show-panel .panel-header {
+    height: 96px;
+    margin-top: 18px;
+}
+
+.show-panel .panel-header .buttons {
+    float: right;
+}
+
+.show-panel .panel-header .image {
+    border: 1px solid #cccccc;
+    border-radius: 48px 48px 48px 48px;
+    -moz-border-radius: 48px 48px 48px 48px;
+    -webkit-border-radius: 48px 48px 48px 48px;
+    height: 96px;
+    width: 96px;
+}
+
+.show-panel .panel-header .details {
+    display: inline-block;
+    height: 86px;
+    margin-left: 24px;
+    padding-top: 12px;
+    vertical-align: top;
+}
+
+.show-panel .panel-header .details h2 {
+    margin: 0px 0px 12px 0px;
+}
+
+.show-panel .panel-header .details h3 {
+    font-size: 14px;
+    margin: 0px 0px 0px 0px;
+    text-transform: uppercase;
+}
+
+.show-panel .panel-contents {
+    border-top: 1px solid #e0e0e0;
+    margin-top: 18px;
+}
+
+.show-panel .panel-contents:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.show-panel .panel-contents dl.inline div.item {
+    float: left;
+    margin: 8px 0px 8px 0px;
+    vertical-align: top;
+    width: 50%;
+}
+
+.show-panel .panel-contents dl.inline div.separator {
+    clear: both;
+}
+
+.show-panel .panel-contents dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px 0px 4px 0px;
+    text-transform: uppercase;
+}
+
+.show-panel .panel-contents dl dd {
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0px 0px 18px 0px;
+}
+
+.login-panel {
+    background-color: #f9f9f9;
+    border: 1px solid #cdcdcd;
+    box-shadow: 0px 0px 6px #e8e8e8;
+    -moz-box-shadow: 0px 0px 6px #e8e8e8;
+    -webkit-box-shadow: 0px 0px 6px #e8e8e8;
+    margin: 64px auto 64px auto;
+    max-width: 342px;
+    padding: 32px 32px 32px 32px;
+}
+
+.login-panel form {
+    margin: 0px 0px 0px 0px;
+    width: 342px;
+}
+
+.login-panel h1 {
+    font-size: 34px;
+    font-weight: normal;
+    margin: 0px 0px 16px 0px;
+}
+
+.login-panel h3 {
+    color: #4d4d4d;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0px 0px 42px 0px;
+}
+
+.login-panel .forgot {
+    margin: -8px 0px 26px 0px;
+    text-align: left;
+}
+
+.login-panel .buttons {
+    margin: 42px 0px 0px 0px;
+}
+
+.login-panel .buttons .button {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 342px;
+}
+
+.login-panel .new {
+    margin-top: 12px;
+    text-align: left;
+}

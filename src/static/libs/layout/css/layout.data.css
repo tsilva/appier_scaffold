@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+/*
+ Hive Layout Framework
+ Copyright (C) 2008-2014 Hive Solutions Lda.
+
+ This file is part of Hive Layout Framework.
+
+ Hive Layout Framework is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ Hive Layout Framework is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with Hive Layout Framework. If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/*
+ __author__    = João Magalhães <joamag@hive.pt>
+ __version__   = 1.0.0
+ __revision__  = $LastChangedRevision$
+ __date__      = $LastChangedDate$
+ __copyright__ = Copyright (c) 2008-2014 Hive Solutions Lda.
+ __license__   = GNU General Public License (GPL), Version 3
+*/
+
+form .multiline {
+    font-size: 0px;
+}
+
+form .street,
+form .zip-code,
+form .province {
+    margin-bottom: 10px;
+}
+
+form .zip-code {
+    margin-right: 1%;
+    max-width: 29%;
+}
+
+form .province {
+    max-width: 70%;
+}
+
+.drop-field.entities > .drop-field-contents {
+    max-height: 324px;
+}
+
+.drop-field.entities > .drop-field-contents > li {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.drop-field.entities > .drop-field-contents > li:last-child {
+    border-bottom: none;
+}
+
+.drop-field.entities .drop-field-contents > * > * {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.drop-field.entities .drop-field-contents > * .picture {
+    border-radius: 32px 32px 32px 32px;
+    -moz-border-radius: 32px 32px 32px 32px;
+    -webkit-border-radius: 32px 32px 32px 32px;
+    height: 64px;
+    width: 64px;
+}
+
+.drop-field.entities .drop-field-contents > * .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 8px 0px 0px 12px;
+}
+
+.drop-field.entities .drop-field-contents > * .description {
+    font-size: 14px;
+    margin: 0px 0px 0px 12px;
+}
