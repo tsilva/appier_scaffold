@@ -1,8 +1,8 @@
 {% extends "partials/layout.html.tpl" %}
 {% block title %}About{% endblock %}
-{% block name %}Test App{% endblock %}
+{% block name %}About{% endblock %}
 {% block content %}
     <div class="quote">
-        This is just a test.
+        This is the about page.
     </div>
 {% endblock %}

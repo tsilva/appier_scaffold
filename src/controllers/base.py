@@ -52,7 +52,6 @@ class BaseController(appier.Controller):
         # performs the login
         try: account = models.Account.login(email, password)
         except appier.exceptions.OperationalError, error:
-            print error.message
             return self.template(
                 "signin.html.tpl",
                 account_s = account_s,
@@ -97,7 +96,6 @@ class BaseController(appier.Controller):
         account = models.Account.new()
         try: account.save()
         except appier.exceptions.ValidationError, error:
-            print str(error.errors)
             return self.template(
                 "signup.html.tpl",
                 account_s = account_s,

@@ -4,7 +4,7 @@
         {% include "partials/content_type.html.tpl" %}
         {% include "partials/includes.html.tpl" %}
         {% include "partials/analytics.html.tpl" %}
-        <title>Reminders / {% block title %}{% endblock %}</title>
+        <title>Test App / {% block title %}{% endblock %}</title>
     {% endblock %}
 </head>
 <body class="ux romantic wait-load">
