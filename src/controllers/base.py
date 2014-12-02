@@ -62,7 +62,7 @@ class BaseController(appier.Controller):
 
         # sets the account in the session
         account.set_in_session()
-
+        
         # redirects to the correct url
         if not next: next = self.url_for("base.index")
         return self.redirect(next)
@@ -208,6 +208,15 @@ class BaseController(appier.Controller):
             "about.html.tpl",
             link = "about",
             account_s = account_s
+        )
+
+    @appier.error_handler(403)
+    def error_403(self, error):
+        return self.redirect(
+            self.url_for(
+                "base.login",
+                error = "Unauthorized, please login first."
+            )
         )
 
     @appier.error_handler(404)
