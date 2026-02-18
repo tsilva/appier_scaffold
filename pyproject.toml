@@ -5,6 +5,6 @@ build-backend = "hatchling.build"
 [project]
 name = "appier_scaffold"
 version = "0.1.0"
-description = "appier_scaffold"
+description = "Starter scaffold for Appier web apps with authentication baked in"
 requires-python = ">=3.10"
 dependencies = []
