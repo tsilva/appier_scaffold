@@ -1,18 +1,19 @@
+<p align="center">
+  <img src="logo.png" alt="appier_scaffold" width="512"/>
+  <br />
+  <!-- repo-tagline:start -->
+  <strong>🏗️ Starter scaffold for Appier web apps with authentication baked in 🐝</strong>
+  <!-- repo-tagline:end -->
+</p>
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+  [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
+
 > [!WARNING]
 > ## Archived
 > This project is archived and no longer maintained.
 >
 > Appier is no longer in active use, so this scaffold has been retired. It remains available as a reference but will not receive updates or bug fixes.
-
-<div align="center">
-  <img src="logo.png" alt="appier_scaffold" width="512"/>
-
-  [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-  [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
-
-  **🏗️ Starter scaffold for Appier web apps with authentication baked in 🐝**
-
-</div>
 
 ---
 
